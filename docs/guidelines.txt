@@ -1,0 +1,20 @@
+Make sure to: 
+Create a presentation that assumes zero context on the design philosophy from the audience. Introduces any thing you're using (eg. include a line about what "P2P" means). @Adi and @Djordje did this very well in the previous presentation day, as did @Sanchayan Ghosh and @sak .
+Keep it simple. Simple concepts, and simple demo.
+Rehearse it (timed at 10 minutez) with your team lead and incorporate feedback before Saturday.
+
+
+a suggestion for the format of slides:
+
+Introduce live interfaces (perhaps using P2P diagram) without needing any context
+Show how your idea fits the pattern in a very simple slide.
+Visual/interactive demo exemplifying the above
+A short list of your future hopes
+
+These could be done in 1 + 2 + 3 + 1 minutes (resp).
+
+It's okay if it's repetitive across demos. Better, even.
+
+If your slide number 2 above is simple, that gives you leeway for demo to be a little complex.
+
+Let's simplify even more. Here (above) are some design guidelines. Our presentation is supposed to be 7 minutes. Let's do it iteratively though. 
