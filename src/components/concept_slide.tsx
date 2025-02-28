@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from 'react';
+import Image from 'next/image';
 
 interface IntroductionSlideProps {
   currentSubsection?: string;
@@ -45,44 +46,15 @@ const IntroductionSlideTemplate = ({ currentSubsection = 'overview', updateCurre
           <h2 className="text-2xl font-bold hand-drawn-text mb-6">The Live Interface Pattern</h2>
           
           <div className="flex justify-center mb-8">
-            <div className="w-full max-w-2xl h-72 relative overflow-hidden hand-drawn-container">
-              {/* Enhanced P2P diagram showing multiple Creators → Growing Software → User */}
-              <div className="absolute left-0 top-0 w-1/3 h-full flex flex-col items-center justify-center p-4">
-                <div className="flex flex-col items-center">
-                  <div className="hand-drawn-circle w-16 h-16 flex items-center justify-center mb-2">
-                    <span className="text-xl">👩‍🎨</span>
-                  </div>
-                  <div className="hand-drawn-circle w-16 h-16 flex items-center justify-center mb-2">
-                    <span className="text-xl">👨‍🎨</span>
-                  </div>
-                  <div className="hand-drawn-circle w-16 h-16 flex items-center justify-center">
-                    <span className="text-xl">👩‍🎨</span>
-                  </div>
-                </div>
-                <span className="hand-drawn-text mt-2">Multiple Creators</span>
-                <div className="mt-2 hand-drawn-text text-center">
-                  Inspirations → Components
-                </div>
-              </div>
-              
-              <div className="absolute left-1/3 top-0 w-1/3 h-full flex flex-col items-center justify-center p-4">
-                <div className="hand-drawn-box w-32 h-24 flex items-center justify-center mb-2">
-                  <span className="hand-drawn-text text-center">Composing & Growing of the software</span>
-                </div>
-              </div>
-              
-              <div className="absolute right-0 top-0 w-1/3 h-full flex flex-col items-center justify-center p-4">
-                <div className="hand-drawn-circle w-20 h-20 flex items-center justify-center mb-2">
-                  <span className="text-2xl">👨‍💻</span>
-                </div>
-                <span className="hand-drawn-text">User</span>
-                <div className="mt-4 hand-drawn-text text-center">
-                  Unique Context & Needs
-                </div>
-              </div>
-              
-              {/* Connecting arrows */}
-              <div className="absolute top-1/2 w-full h-2 hand-drawn-arrow"></div>
+            <div className="w-full max-w-2xl relative overflow-hidden hand-drawn-container">
+              <Image
+                src="/images/live-interface-pattern.png"
+                alt="Live Interface Pattern showing Users and Creators connected through a custom interface"
+                width={800}
+                height={400}
+                className="w-full h-auto"
+                priority
+              />
             </div>
           </div>
           
@@ -105,8 +77,8 @@ const IntroductionSlideTemplate = ({ currentSubsection = 'overview', updateCurre
           <div className="mt-6 flex justify-center">
             <div className="hand-drawn-box p-3 bg-blue-50 max-w-lg">
               <p className="hand-drawn-text text-center">
-                Live Software emerges from the composition of multiple creators' components,
-                adapting to each user's unique context
+                Live Software connects the space of created artifacts to the space of user prayers,
+                creating custom interfaces that adapt to each user's unique context
               </p>
             </div>
           </div>
