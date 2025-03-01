@@ -5,7 +5,7 @@ const ImplementationSlideTemplate = () => {
     <div className="max-w-4xl mx-auto">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-6">
-          <h2 className="text-2xl font-bold hand-drawn-text mb-6">Live Software</h2>
+          <h2 className="text-2xl font-bold hand-drawn-text mb-6">Live Software: Implementing the Live Interface Pattern</h2>
           
           <div className="flex justify-center mb-8">
             <div className="w-full max-w-2xl h-80 relative overflow-hidden hand-drawn-container">
@@ -23,9 +23,9 @@ const ImplementationSlideTemplate = () => {
                   </div>
                 </div>
                 <div className="mt-3">
-                  <div className="hand-drawn-text font-semibold text-center">Multiple Creators</div>
+                  <div className="hand-drawn-text font-semibold text-center">Designers</div>
                   <div className="hand-drawn-text text-center text-sm">
-                    Inspirations → Components
+                    DIY Tool Recipes → Components
                   </div>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const ImplementationSlideTemplate = () => {
               {/* Middle section: Composability */}
               <div className="absolute left-1/3 top-1/2 w-1/3 h-auto flex justify-center transform -translate-y-1/2">
                 <div className="hand-drawn-box w-40 py-4 px-3 flex items-center justify-center bg-blue-50">
-                  <span className="hand-drawn-text text-center">Composing & Growing of the software</span>
+                  <span className="hand-drawn-text text-center">AI "Cooks" Recipes Into<br/>Individualized Tools</span>
                 </div>
               </div>
               
@@ -63,13 +63,30 @@ const ImplementationSlideTemplate = () => {
             </div>
           </div>
           
+          {/* Comparison - Traditional vs Live Software */}
+          <div className="grid grid-cols-2 gap-4 mb-6">
+            <div className="hand-drawn-box p-4 flex flex-col items-center text-center">
+              <h3 className="text-lg font-semibold hand-drawn-text mb-2">Traditional Tool Platforms</h3>
+              <p className="hand-drawn-text">
+                Standardized packages, fixed interfaces, limited customizability
+              </p>
+            </div>
+            
+            <div className="hand-drawn-box p-4 flex flex-col items-center text-center">
+              <h3 className="text-lg font-semibold hand-drawn-text mb-2">Live Software Platform</h3>
+              <p className="hand-drawn-text">
+                <span className="font-bold">Heterogeneous recipes</span>, tailored reproduction, on-the-fly modification
+              </p>
+            </div>
+          </div>
+          
           {/* Key Principles */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div className="hand-drawn-box p-4 bg-blue-50 flex flex-col items-center">
               <span className="text-2xl mb-2">🔄</span>
               <h3 className="text-lg font-semibold hand-drawn-text mb-1 text-center">Composable</h3>
               <p className="hand-drawn-text text-center text-sm">
-                Components combine in unique ways
+                "Steal" recipes and reproduce them with AI software agents
               </p>
             </div>
             
@@ -77,7 +94,7 @@ const ImplementationSlideTemplate = () => {
               <span className="text-2xl mb-2">🌱</span>
               <h3 className="text-lg font-semibold hand-drawn-text mb-1 text-center">Adaptive</h3>
               <p className="hand-drawn-text text-center text-sm">
-                Evolves with user feedback
+                Apps tailored to user preferences, modified on the fly
               </p>
             </div>
             
@@ -85,7 +102,7 @@ const ImplementationSlideTemplate = () => {
               <span className="text-2xl mb-2">👤</span>
               <h3 className="text-lg font-semibold hand-drawn-text mb-1 text-center">Contextual</h3>
               <p className="hand-drawn-text text-center text-sm">
-                Responds to unique user needs
+                Subscribe to designers whose recipes you find aesthetic
               </p>
             </div>
           </div>
@@ -94,8 +111,8 @@ const ImplementationSlideTemplate = () => {
             <div className="flex justify-center">
               <div className="hand-drawn-box px-5 py-3 bg-blue-50 max-w-lg">
                 <p className="hand-drawn-text text-center font-semibold">
-                  "Live Software emerges from many creators' components,<br/>
-                  adapting to each user's unique context"
+                  "Live Interfaces enable meaning to happen in the middle, between us,<br/>
+                  while Live Software backgrounds AI as infrastructure to foreground human connection"
                 </p>
               </div>
             </div>

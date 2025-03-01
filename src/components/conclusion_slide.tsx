@@ -8,17 +8,19 @@ interface ConclusionSlideProps {
   updateCurrentSubsection?: (subsection: string) => void;
 }
 
-const ConclusionSlideTemplate = ({ currentSubsection = 'summary', updateCurrentSubsection }: ConclusionSlideProps) => {
+const ConclusionSlideTemplate = ({ currentSubsection = 'near_term', updateCurrentSubsection }: ConclusionSlideProps) => {
   // Map subsection IDs to slide indices
   const subsectionMap = useMemo(() => ({
-    'summary': 0,
-    'vision': 1
+    'near_term': 0,
+    'mid_term': 1,
+    'long_term': 2
   }), []);
   
   // Reverse map to get subsection from index
   const indexToSubsectionMap = useMemo(() => ({
-    0: 'summary',
-    1: 'vision'
+    0: 'near_term',
+    1: 'mid_term',
+    2: 'long_term'
   }), []);
   
   // Set the current slide based on the subsection prop
@@ -41,114 +43,223 @@ const ConclusionSlideTemplate = ({ currentSubsection = 'summary', updateCurrentS
   };
 
   const slides = [
-    // Summary Slide
+    // Near-term Vision
     {
-      title: "Summary",
+      title: "Near Future",
       content: (
         <div className="p-6">
-          <h2 className="text-2xl font-bold hand-drawn-text mb-6">Live Software: Growing Interfaces</h2>
+          <h2 className="text-2xl font-bold hand-drawn-text mb-6">Growing UI Ecosystem: First Steps</h2>
           
           <div className="hand-drawn-container p-5 mb-6">
-            <div className="hand-drawn-box p-4 bg-green-50 mb-6 max-w-2xl mx-auto">
-              <p className="hand-drawn-text text-center text-lg">
-                A platform for growing UI components that adapt and evolve 
-                to connect creators with users
-              </p>
+            <div className="flex justify-center mb-6">
+              <div className="relative p-3 hand-drawn-box bg-amber-50 text-center">
+                <h3 className="text-lg font-semibold hand-drawn-text mb-2">From Standardized to Heterogeneous</h3>
+                <p className="text-sm hand-drawn-text">
+                  Reimagining what software distribution can be
+                </p>
+              </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-6">
-              <div className="hand-drawn-box p-4 flex flex-col items-center">
-                <div className="flex items-center mb-2">
-                  <span className="text-2xl mr-2">🧩</span>
-                  <span className="text-2xl">+</span>
-                  <span className="text-2xl ml-2">🧩</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="p-4 hand-drawn-box">
+                <div className="flex items-center justify-center mb-3">
+                  <span className="text-3xl">📦</span>
+                  <span className="text-xl mx-2">→</span>
+                  <span className="text-3xl">💻</span>
                 </div>
-                <h4 className="font-semibold hand-drawn-text mb-1 text-center">Composable Design</h4>
-                <p className="hand-drawn-text text-center text-sm">
-                  Components that naturally grow together
-                </p>
+                <h4 className="text-center font-semibold hand-drawn-text mb-2">Traditional Approach</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start text-sm">
+                    <span className="text-amber-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Standardized application packages</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-amber-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Download and install process</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-amber-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Fixed interfaces with limited modifiability</span>
+                  </li>
+                </ul>
               </div>
               
-              <div className="hand-drawn-box p-4 flex flex-col items-center">
-                <div className="flex items-center mb-2">
-                  <span className="text-2xl mr-2">🌿</span>
-                  <span className="text-2xl">→</span>
-                  <span className="text-2xl ml-2">🏷️</span>
+              <div className="p-4 hand-drawn-box bg-amber-50">
+                <div className="flex items-center justify-center mb-3">
+                  <span className="text-3xl">📝</span>
+                  <span className="text-xl mx-2">→</span>
+                  <span className="text-3xl">🪄</span>
                 </div>
-                <h4 className="font-semibold hand-drawn-text mb-1 text-center">Natural Attribution</h4>
-                <p className="hand-drawn-text text-center text-sm">
-                  Recognizing the gardeners of each component
-                </p>
+                <h4 className="text-center font-semibold hand-drawn-text mb-2">Our Vision</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start text-sm">
+                    <span className="text-amber-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Heterogeneous design recipes</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-amber-600 mr-2">•</span>
+                    <span className="hand-drawn-text">"Steal" and reproduce approach</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-amber-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Tailored to user preferences</span>
+                  </li>
+                </ul>
               </div>
             </div>
-
-            <div className="flex justify-center">
-              <div className="hand-drawn-box px-5 py-3 bg-amber-50 max-w-lg">
-                <p className="hand-drawn-text text-center">
-                  "Let's grow interfaces that understand their users"
-                </p>
-              </div>
+            
+            <div className="hand-drawn-box p-3 bg-amber-50 max-w-lg mx-auto">
+              <p className="hand-drawn-text text-center">
+                Phase 1: Building early prototypes and proof-of-concept implementations
+              </p>
             </div>
           </div>
         </div>
       )
     },
-    // Vision Slide
+    // Mid-term Vision
     {
-      title: "Future Vision",
+      title: "Mid Term",
       content: (
         <div className="p-6">
-          <h2 className="text-2xl font-bold hand-drawn-text mb-6">Growing into the Future</h2>
+          <h2 className="text-2xl font-bold hand-drawn-text mb-6">Evolving Interfaces: Growing Connections</h2>
           
-          <div className="hand-drawn-container p-6 mb-6">
-            <div className="flex justify-center mb-8">
-              <div className="w-full max-w-xl relative">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="hand-drawn-box p-4 bg-green-50">
-                    <div className="text-center mb-2">
-                      <span className="text-3xl">🌱</span>
-                    </div>
-                    <h3 className="text-lg font-semibold hand-drawn-text mb-2 text-center">Seed</h3>
-                    <ul className="space-y-2">
-                      <li className="hand-drawn-text text-sm">• First UI garden</li>
-                      <li className="hand-drawn-text text-sm">• Component nursery</li>
-                      <li className="hand-drawn-text text-sm">• Early adopters</li>
-                    </ul>
-                  </div>
-                  
-                  <div className="hand-drawn-box p-4 bg-emerald-50">
-                    <div className="text-center mb-2">
-                      <span className="text-3xl">🌿</span>
-                    </div>
-                    <h3 className="text-lg font-semibold hand-drawn-text mb-2 text-center">Growth</h3>
-                    <ul className="space-y-2">
-                      <li className="hand-drawn-text text-sm">• Thriving ecosystem</li>
-                      <li className="hand-drawn-text text-sm">• Creator tools</li>
-                      <li className="hand-drawn-text text-sm">• Community gardens</li>
-                    </ul>
-                  </div>
-                  
-                  <div className="hand-drawn-box p-4 bg-teal-50">
-                    <div className="text-center mb-2">
-                      <span className="text-3xl">🌳</span>
-                    </div>
-                    <h3 className="text-lg font-semibold hand-drawn-text mb-2 text-center">Forest</h3>
-                    <ul className="space-y-2">
-                      <li className="hand-drawn-text text-sm">• UI biodiversity</li>
-                      <li className="hand-drawn-text text-sm">• Living interfaces</li>
-                      <li className="hand-drawn-text text-sm">• Digital ecology</li>
-                    </ul>
-                  </div>
-                </div>
+          <div className="hand-drawn-container p-5 mb-6">
+            <div className="flex justify-center mb-6">
+              <div className="relative p-3 hand-drawn-box bg-teal-50 text-center">
+                <h3 className="text-lg font-semibold hand-drawn-text mb-2">From Products to Creators</h3>
+                <p className="text-sm hand-drawn-text">
+                  Changing how we attribute and reward digital creation
+                </p>
               </div>
             </div>
             
-            <div className="flex justify-center">
-              <div className="hand-drawn-box px-5 py-3 bg-green-50 max-w-lg">
-                <p className="hand-drawn-text text-center">
-                  "From seeds of inspiration to forests of possibility"
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="p-4 hand-drawn-box">
+                <div className="flex items-center justify-center mb-3">
+                  <span className="text-3xl">💰</span>
+                  <span className="text-xl mx-2">→</span>
+                  <span className="text-3xl">🛒</span>
+                </div>
+                <h4 className="text-center font-semibold hand-drawn-text mb-2">Traditional Approach</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start text-sm">
+                    <span className="text-teal-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Purchase/Subscribe to digital products</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-teal-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Services as commodities</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-teal-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Limited connection to creators</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="p-4 hand-drawn-box bg-teal-50">
+                <div className="flex items-center justify-center mb-3">
+                  <span className="text-3xl">👩‍🎨</span>
+                  <span className="text-xl mx-2">→</span>
+                  <span className="text-3xl">🤝</span>
+                </div>
+                <h4 className="text-center font-semibold hand-drawn-text mb-2">Our Vision</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start text-sm">
+                    <span className="text-teal-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Subscribe to designers and creators</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-teal-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Support aesthetic design recipes</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-teal-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Direct connection between creator and user</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="hand-drawn-box p-3 bg-teal-50 max-w-lg mx-auto">
+              <p className="hand-drawn-text text-center">
+                Phase 2: Building thriving communities and ecosystems of creators
+              </p>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    // Long-term Vision
+    {
+      title: "Long Term",
+      content: (
+        <div className="p-6">
+          <h2 className="text-2xl font-bold hand-drawn-text mb-6">A New Digital Ecosystem</h2>
+          
+          <div className="hand-drawn-container p-5 mb-6">
+            <div className="flex justify-center mb-6">
+              <div className="relative p-3 hand-drawn-box bg-purple-50 text-center">
+                <h3 className="text-lg font-semibold hand-drawn-text mb-2">From Infrastructure to Intelligence</h3>
+                <p className="text-sm hand-drawn-text">
+                  Reimagining the foundation of software experiences
                 </p>
               </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="p-4 hand-drawn-box">
+                <div className="flex items-center justify-center mb-3">
+                  <span className="text-3xl">🏗️</span>
+                  <span className="text-xl mx-2">+</span>
+                  <span className="text-3xl">📜</span>
+                </div>
+                <h4 className="text-center font-semibold hand-drawn-text mb-2">Traditional Approach</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start text-sm">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Standardized protocols</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Focused development chains</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Rigid ecosystem boundaries</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="p-4 hand-drawn-box bg-purple-50">
+                <div className="flex items-center justify-center mb-3">
+                  <span className="text-3xl">🤖</span>
+                  <span className="text-xl mx-2">+</span>
+                  <span className="text-3xl">🌱</span>
+                </div>
+                <h4 className="text-center font-semibold hand-drawn-text mb-2">Our Vision</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start text-sm">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span className="hand-drawn-text">AI software agents as infrastructure</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Fluid boundaries between systems</span>
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <span className="text-purple-600 mr-2">•</span>
+                    <span className="hand-drawn-text">Living interfaces that evolve naturally</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="hand-drawn-box p-3 bg-purple-50 max-w-lg mx-auto">
+              <p className="hand-drawn-text text-center">
+                Phase 3: A flourishing digital ecosystem of adaptive, personalized interfaces
+              </p>
             </div>
           </div>
         </div>
@@ -170,7 +281,7 @@ const ConclusionSlideTemplate = ({ currentSubsection = 'summary', updateCurrentS
                 onClick={() => handleSlideChange(index)}
                 className={`text-xs px-2 py-0.5 rounded ${
                   currentSlide === index 
-                    ? 'bg-green-600 text-white' 
+                    ? 'bg-amber-600 text-white' 
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -191,7 +302,7 @@ const ConclusionSlideTemplate = ({ currentSubsection = 'summary', updateCurrentS
           className={`text-sm px-3 py-1 rounded-md ${
             currentSlide === 0 
               ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
-              : 'bg-green-600 text-white hover:bg-green-700'
+              : 'bg-amber-600 text-white hover:bg-amber-700'
           }`}
         >
           Previous
@@ -203,7 +314,7 @@ const ConclusionSlideTemplate = ({ currentSubsection = 'summary', updateCurrentS
               key={index}
               onClick={() => handleSlideChange(index)}
               className={`w-2 h-2 rounded-full ${
-                currentSlide === index ? 'bg-green-600' : 'bg-gray-300'
+                currentSlide === index ? 'bg-amber-600' : 'bg-gray-300'
               }`}
             />
           ))}
@@ -215,7 +326,7 @@ const ConclusionSlideTemplate = ({ currentSubsection = 'summary', updateCurrentS
           className={`text-sm px-3 py-1 rounded-md ${
             currentSlide === slides.length - 1
               ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
-              : 'bg-green-600 text-white hover:bg-green-700'
+              : 'bg-amber-600 text-white hover:bg-amber-700'
           }`}
         >
           Next

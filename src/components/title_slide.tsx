@@ -58,7 +58,7 @@ const TitleSlideTemplate = () => {
           
           {/* Key concepts - updated to include composability */}
           <div className="flex flex-wrap justify-center gap-4 mt-6 mb-8">
-            {['P2P Interfaces', 'Composable', 'Human-Centered', 'Adaptive Growth'].map((tag, index) => (
+            {['Composable', 'Human-Centered', 'Adaptive'].map((tag, index) => (
               <span key={index} className="px-4 py-2 hand-drawn-tag text-lg">
                 {tag}
               </span>
@@ -67,15 +67,31 @@ const TitleSlideTemplate = () => {
           
           {/* Team information updated */}
           <div className="mt-8">
-            <div className="flex justify-center gap-8">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 hand-drawn-text">Aayush Kucheria</h3>
+            <div className="flex flex-col items-center">
+              <div className="flex justify-center gap-8 mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 hand-drawn-text">Aayush Kucheria</h3>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 hand-drawn-text">Kuil Schoneveld</h3>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 hand-drawn-text">Kuil Schoneveld</h3>
+              
+              {/* Added advisor section with subtle visual distinction */}
+              <div className="mt-2 mb-3">
+                <p className="text-sm uppercase tracking-wider text-gray-500">Under the guidance of</p>
+                <div className="flex justify-center gap-8 mt-1">
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-700 hand-drawn-text">Sofi Vanhanen</h3>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-700 hand-drawn-text">Sahil Kulshrestha</h3>
+                  </div>
+                </div>
               </div>
+              
+              <p className="text-gray-600 mt-2">AI Safety Camp | Live Theory 2025</p>
             </div>
-            <p className="text-gray-600 mt-2">AI Safety Camp | Live Theory 2025</p>
           </div>
         </div>
       </div>

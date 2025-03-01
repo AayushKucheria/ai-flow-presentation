@@ -43,13 +43,16 @@ const IntroductionSlideTemplate = ({ currentSubsection = 'overview', updateCurre
     <div className="max-w-4xl mx-auto">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-6">
-          <h2 className="text-2xl font-bold hand-drawn-text mb-6">The Live Interface Pattern</h2>
+          <h2 className="text-2xl font-bold hand-drawn-text mb-2">The Live Interface Pattern</h2>
+          <p className="hand-drawn-text text-center text-sm italic mb-6">
+            "When attentivity is cheap, fast, and accurate, it becomes possible to scale that which doesn't scale."
+          </p>
           
           <div className="flex justify-center mb-8">
             <div className="w-full max-w-2xl relative overflow-hidden hand-drawn-container">
               <Image
                 src="/images/live-interface-pattern.png"
-                alt="Live Interface Pattern showing Users and Creators connected through a custom interface"
+                alt="Live Interface Pattern showing person-to-person connection through interfaces"
                 width={800}
                 height={400}
                 className="w-full h-auto"
@@ -60,16 +63,16 @@ const IntroductionSlideTemplate = ({ currentSubsection = 'overview', updateCurre
           
           <div className="grid grid-cols-2 gap-4">
             <div className="hand-drawn-box p-4 flex flex-col items-center text-center">
-              <h3 className="text-lg font-semibold hand-drawn-text mb-2">Traditional Software</h3>
+              <h3 className="text-lg font-semibold hand-drawn-text mb-2">Traditional Interfaces</h3>
               <p className="hand-drawn-text">
-                Fixed structure, single-source design, one-size-fits-all
+                Fixed structure, preformed protocols, context-independence that scales through exclusion
               </p>
             </div>
             
             <div className="hand-drawn-box p-4 flex flex-col items-center text-center">
-              <h3 className="text-lg font-semibold hand-drawn-text mb-2">Live Software</h3>
+              <h3 className="text-lg font-semibold hand-drawn-text mb-2">Live Interfaces</h3>
               <p className="hand-drawn-text">
-                <span className="font-bold">Composable</span>, multi-source, personalized experience
+                <span className="font-bold">Person-to-person</span>, heterogeneous context, scaling what doesn't scale
               </p>
             </div>
           </div>
@@ -77,8 +80,33 @@ const IntroductionSlideTemplate = ({ currentSubsection = 'overview', updateCurre
           <div className="mt-6 flex justify-center">
             <div className="hand-drawn-box p-3 bg-blue-50 max-w-lg">
               <p className="hand-drawn-text text-center">
-                Live Software connects the space of created artifacts to the space of user prayers,
-                creating custom interfaces that adapt to each user's unique context
+                "Context-independence is subtly tyrannical: centralized, preformed, numb."
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="hand-drawn-box p-4 bg-purple-50 flex flex-col items-center">
+              <span className="text-2xl mb-2">🔄</span>
+              <h3 className="text-lg font-semibold hand-drawn-text mb-1 text-center">Postformal</h3>
+              <p className="hand-drawn-text text-center text-sm">
+                Beyond fixed formalisms and structures
+              </p>
+            </div>
+            
+            <div className="hand-drawn-box p-4 bg-indigo-50 flex flex-col items-center">
+              <span className="text-2xl mb-2">👁️</span>
+              <h3 className="text-lg font-semibold hand-drawn-text mb-1 text-center">Attentive</h3>
+              <p className="hand-drawn-text text-center text-sm">
+                Actively listens and responds to unique contexts
+              </p>
+            </div>
+            
+            <div className="hand-drawn-box p-4 bg-blue-50 flex flex-col items-center">
+              <span className="text-2xl mb-2">🔍</span>
+              <h3 className="text-lg font-semibold hand-drawn-text mb-1 text-center">Adaptive</h3>
+              <p className="hand-drawn-text text-center text-sm">
+                Dynamically evolves its structure to match changing needs
               </p>
             </div>
           </div>

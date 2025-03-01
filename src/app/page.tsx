@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import TitleSlideTemplate from "@/components/title_slide";
 import IntroductionSlideTemplate from "@/components/concept_slide";
 import MethodologySlideTemplate from "@/components/demo_slide";
-import DiscussionSlideTemplate from "@/components/philosophy_slide";
+import SummarySlideTemplate from "@/components/summary_slide";
 import ConclusionSlideTemplate from "@/components/conclusion_slide";
 import ImplementationSlideTemplate from "@/components/live_software_slide";
 
@@ -14,8 +14,8 @@ const presentationStructure = {
   concept: { subsections: ['overview'] },
   live_software: { subsections: ['how_it_works'] },
   demo: { subsections: ['demo'] },
-  philosophy: { subsections: ['human_centered', 'decentralized'] },
-  conclusion: { subsections: ['vision'] }
+  summary: { subsections: ['key_points'] },
+  conclusion: { subsections: ['near_term', 'mid_term', 'long_term'] }
 };
 
 // Type for our slide sections
@@ -28,7 +28,7 @@ export default function Home() {
   
   // Define the slide order for navigation (main sections)
   const slideOrder = useMemo<SlideSection[]>(() => 
-    ['title', 'concept', 'live_software', 'demo', 'philosophy', 'conclusion']
+    ['title', 'concept', 'live_software', 'demo', 'summary', 'conclusion']
   , []);
   
   // Function to navigate to the next slide or subsection
@@ -136,7 +136,7 @@ export default function Home() {
       concept: 'bg-blue-600',
       live_software: 'bg-indigo-600',
       demo: 'bg-green-600',
-      philosophy: 'bg-teal-600',
+      summary: 'bg-teal-600',
       conclusion: 'bg-amber-600'
     };
     return colors[section] || 'bg-gray-600';
@@ -181,8 +181,8 @@ export default function Home() {
           <ImplementationSlideTemplate />
         ) : activeSlide === 'demo' ? (
           <MethodologySlideTemplate />
-        ) : activeSlide === 'philosophy' ? (
-          <DiscussionSlideTemplate 
+        ) : activeSlide === 'summary' ? (
+          <SummarySlideTemplate 
             currentSubsection={activeSubsection}
             updateCurrentSubsection={updateSubsection}
           />
