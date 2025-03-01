@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "DISABLE_ESLINT_PLUGIN=true next build",
+    "deploy": "npm run export"
   },
   "repository": {
     "type": "git",

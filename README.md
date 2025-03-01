@@ -65,4 +65,38 @@ See [design.md](design.md) for detailed information on the design principles app
 
 ## 📄 License
 
-MIT 
+MIT
+
+## GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages. Here's how it works:
+
+### Automatic Deployment
+
+1. Push changes to the `main` branch
+2. GitHub Actions will automatically build and deploy the site to GitHub Pages
+3. The site will be available at `https://aayushkucheria.github.io/Live-Software`
+
+### Manual Setup Instructions
+
+If you need to set up GitHub Pages for this repository:
+
+1. Go to your repository on GitHub
+2. Navigate to Settings > Pages
+3. Under "Build and deployment":
+   - Source: Select "GitHub Actions"
+4. The first push to the main branch after this setup will trigger the deployment
+
+### Local Testing of Production Build
+
+To test the GitHub Pages version locally:
+
+```bash
+# Build the static export
+npm run export
+
+# Serve the static files
+npx serve out
+```
+
+The site will be available at `http://localhost:3000` 
