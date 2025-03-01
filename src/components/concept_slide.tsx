@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 interface IntroductionSlideProps {
   currentSubsection?: string;
@@ -51,7 +52,7 @@ const IntroductionSlideTemplate = ({ currentSubsection = 'overview', updateCurre
           <div className="flex justify-center mb-8">
             <div className="w-full max-w-2xl relative overflow-hidden hand-drawn-container">
               <Image
-                src="/images/live-interface-pattern.png"
+                src={`${process.env.NODE_ENV === 'production' ? '/Live-Software' : ''}/images/live-interface-pattern.png`}
                 alt="Live Interface Pattern showing person-to-person connection through interfaces"
                 width={800}
                 height={400}
