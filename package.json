@@ -1,7 +1,7 @@
 {
-  "name": "live-software-interfaces",
+  "name": "ai-flow-presentation",
   "version": "0.1.0",
-  "description": "Live Software: Composable, Human-Centered, Adaptive Growing Interfaces",
+  "description": "AI Flow: Presentation on modern AI workflows and interfaces",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,13 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/live-software-interfaces.git"
+    "url": "git+https://github.com/aayushkucheria/ai-flow-presentation.git"
   },
   "keywords": [
-    "live-software",
+    "ai-flow",
+    "artificial-intelligence",
     "user-interfaces",
     "hci",
-    "interface-design",
+    "presentation",
     "next.js"
   ],
   "author": "",

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Live Software - Growing Interfaces",
-  description: "Live Software: Composable, Human-Centered, Adaptive Growing Interfaces",
+  title: "Aayush Kucheria - Humans of EA Finland 2025",
+  description: "My Posture Towards AI Use - Aayush Kucheria's presentation for Humans of EA Finland 2025",
   icons: {
     icon: [],
     apple: [],

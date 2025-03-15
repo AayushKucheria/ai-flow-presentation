@@ -12,16 +12,3 @@
 * **Meaningful visuals** that support your points
 * **Examples and screenshots** to illustrate interactions
 * **Clear, readable charts** with annotations
-
-### Effective Communication
-
-* **Assertion-evidence model**: Make slides with clear assertions supported by evidence
-* **Precise terminology**: Use "interaction styles" instead of "personalities"
-* **Context-setting** for each major section
-
-### Research Presentation Best Practices
-
-* **Clear connections** between research questions and findings
-* **Proper citations** of key literature and concepts
-* **Balance** between technical depth and accessibility
-* **Anticipate questions** with backup slides

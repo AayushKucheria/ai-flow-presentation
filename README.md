@@ -1,14 +1,14 @@
-# Live Software: Growing Interfaces
+# AI Flow Presentation
 
-This repository contains a presentation and conceptual framework for "Live Software" - a design philosophy for building composable, human-centered, and adaptive interfaces.
+This repository contains a presentation on modern AI workflows and interfaces.
 
 ## 🚀 Project Overview
 
-Live Software is a design philosophy that emphasizes:
+This presentation explores:
 
-- **Composability**: Building software from interoperable components that can be assembled in novel ways
-- **Human-Centered Design**: Putting human needs and capabilities at the core of interface design
-- **Adaptivity**: Creating interfaces that evolve and grow with user needs
+- **Modern AI Interfaces**: How we interact with AI systems today
+- **Workflows**: Best practices for working with AI
+- **Future Trends**: Where AI interfaces are headed
 
 ## 📋 Contents
 
@@ -75,7 +75,7 @@ This project is configured for automatic deployment to GitHub Pages. Here's how 
 
 1. Push changes to the `main` branch
 2. GitHub Actions will automatically build and deploy the site to GitHub Pages
-3. The site will be available at `https://aayushkucheria.github.io/Live-Software`
+3. The site will be available at `https://aayushkucheria.github.io/ai-flow-presentation`
 
 ### Manual Setup Instructions
 

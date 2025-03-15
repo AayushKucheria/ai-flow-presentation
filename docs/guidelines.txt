@@ -1,20 +1,49 @@
-Make sure to: 
-Create a presentation that assumes zero context on the design philosophy from the audience. Introduces any thing you're using (eg. include a line about what "P2P" means). @Adi and @Djordje did this very well in the previous presentation day, as did @Sanchayan Ghosh and @sak .
-Keep it simple. Simple concepts, and simple demo.
-Rehearse it (timed at 10 minutez) with your team lead and incorporate feedback before Saturday.
+Garden Metaphor
+This visual metaphor uses a garden to represent your AI ecosystem:
 
+You as the gardener nurturing different tools
+Embodied experience as the watering can that helps everything grow
+Journey path showing your evolution at the bottom
+Self-connection as the sun that nourishes everything
 
-a suggestion for the format of slides:
+Best for: A holistic view that emphasizes how all elements work together
 
-Introduce live interfaces (perhaps using P2P diagram) without needing any context
-Show how your idea fits the pattern in a very simple slide.
-Visual/interactive demo exemplifying the above
-A short list of your future hopes
+Themes (derived from context.md)
 
-These could be done in 1 + 2 + 3 + 1 minutes (resp).
-
-It's okay if it's repetitive across demos. Better, even.
-
-If your slide number 2 above is simple, that gives you leeway for demo to be a little complex.
-
-Let's simplify even more. Here (above) are some design guidelines. Our presentation is supposed to be 7 minutes. Let's do it iteratively though. 
+flowchart TD
+    A[AI Tools for Better Living] --> G[Evolution of Approach]
+    A --> B[Purpose-Driven Tool Selection]
+    A --> C[Breaking Through Personal Limitations]
+    A --> D[Connecting with Past & Future Self]
+    A --> E[Intentional Augmentation vs Passive Delegation]
+    A --> F[Open Challenges & Future Directions]
+    
+    G --> G1[From Delegation to Augmentation]
+    G --> G2[The Automation Pitfall]
+    G --> G3[Finding Balance]
+    G --> G4[Embodied Experience as Calibration]
+    
+    B --> B1[Finding Similar Content: Exa.ai]
+    B --> B2[Information Gathering: Perplexity]
+    B --> B3[Scientific Questions: Elicit]
+    B --> B4[Overcoming Writing: VoiceNotes]
+    B --> B5[Coding Assistance: Cursor]
+    
+    C --> C1[Case: Presentation Design]
+    C --> C2[Case: Reading Discovery]
+    C --> C3[Case: Writing Consistency]
+    C --> C4[Physical Freedom: Location Independence]
+    
+    D --> D1[Pattern Recognition in Journal Entries]
+    D --> D2[Tracking Thought Evolution]
+    D --> D3[Self-Connection Through Time]
+    D --> D4[Collaborative Bond with Past/Future Selves]
+    
+    E --> E1[Structural Thinking Support]
+    E --> E2[Reflection vs Creation]
+    E --> E3[Multi-Perspective Lens]
+    E --> E4[Lower Barriers to Curiosity]
+    
+    F --> F1[Skill Development Tension]
+    F --> F2[Custom Solution Development]
+    F --> F3[Future Experiments]

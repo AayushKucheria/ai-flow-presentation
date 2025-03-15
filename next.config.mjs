@@ -8,9 +8,9 @@ const nextConfig = {
     unoptimized: true,
   },
   // Add base path if deploying to a custom subdomain (e.g., username.github.io/repo-name)
-  basePath: process.env.NODE_ENV === 'production' ? '/Live-Software' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/ai-flow-presentation' : '',
   // Ensure assets are correctly referenced
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Live-Software/' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/ai-flow-presentation/' : '',
   // Disable ESLint during build
   eslint: {
     ignoreDuringBuilds: true,
