@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 /**
  * Tools slide: Tools I Use
@@ -29,7 +30,7 @@ const ToolsSlide = () => {
               <div className="flex items-center mb-3">
                 <div className="w-12 h-12 rounded-full bg-amber-100 border-2 border-amber-400 flex items-center justify-center mr-3 overflow-hidden">
                   <Image 
-                    src="/docs/images/claude.png" 
+                    src={getImagePath("/docs/images/claude.png")} 
                     alt="Claude" 
                     width={40} 
                     height={40} 
@@ -59,7 +60,7 @@ const ToolsSlide = () => {
               <div className="flex items-center mb-3">
                 <div className="w-12 h-12 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center mr-3 overflow-hidden">
                   <Image 
-                    src="/docs/images/voicenotes.png" 
+                    src={getImagePath("/docs/images/voicenotes.png")} 
                     alt="VoiceNotes" 
                     width={40} 
                     height={40} 
@@ -91,7 +92,7 @@ const ToolsSlide = () => {
               <div className="flex items-center mb-3">
                 <div className="w-12 h-12 rounded-full bg-blue-100 border-2 border-blue-300 flex items-center justify-center mr-3 overflow-hidden">
                   <Image 
-                    src="/docs/images/exa.jpeg" 
+                    src={getImagePath("/docs/images/exa.jpeg")} 
                     alt="Exa.ai" 
                     width={40} 
                     height={40} 
@@ -119,7 +120,7 @@ const ToolsSlide = () => {
               <div className="flex items-center mb-3">
                 <div className="w-12 h-12 rounded-full bg-teal-100 border-2 border-teal-300 flex items-center justify-center mr-3 overflow-hidden">
                   <Image 
-                    src="/docs/images/perplexity.png" 
+                    src={getImagePath("/docs/images/perplexity.png")} 
                     alt="Perplexity" 
                     width={40} 
                     height={40} 
@@ -147,7 +148,7 @@ const ToolsSlide = () => {
               <div className="flex items-center mb-3">
                 <div className="w-12 h-12 rounded-full bg-green-100 border-2 border-green-300 flex items-center justify-center mr-3 overflow-hidden">
                   <Image 
-                    src="/docs/images/elicit.jpeg" 
+                    src={getImagePath("/docs/images/elicit.jpeg")} 
                     alt="Elicit" 
                     width={40} 
                     height={40} 
@@ -177,7 +178,7 @@ const ToolsSlide = () => {
               <div className="flex items-center mb-3">
                 <div className="w-12 h-12 rounded-full bg-black border-2 border-gray-600 flex items-center justify-center mr-3 overflow-hidden">
                   <Image 
-                    src="/docs/images/cursor.png" 
+                    src={getImagePath("/docs/images/cursor.png")} 
                     alt="Cursor" 
                     width={40} 
                     height={40} 
